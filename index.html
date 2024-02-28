@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>我的工作台</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header">
+			<h1>🐟 戳的工作台</h1>
+			<p>一杯咖啡一杯酒，一行代码一整天</p>
+		</div>
+		<div class="search-container">
+			<input type="text" id="search" placeholder="输入搜索词" />
+			<button onclick="search()">🔍</button>
+
+		</div>
+		<div class="toolbar">
+			<div class="toolbar-section">
+				<h2>大助手</h2>
+				<div class="link" onclick="window.location='https://chat.openai.com/';">
+					<!-- <img src="chatgpt-icon.png" alt="ChatGPT"> -->
+					<span>ChatGPT</span>
+				</div>
+				<div class="link" onclick="window.location='https://chat.rawchat.cn/';">
+					<!-- <img src="chatgpt-icon.png" alt="ChatGPT"> -->
+					<span>天才ChatGPT</span>
+				</div>
+
+			</div>
+			<div class="toolbar-section">
+				<h2>工作流</h2>
+				<div class="link"
+					onclick="window.location='https://postnitro.ai/zh/app/carousel-maker/b5cc7axkpljlqg3mdom001tn';">
+					<!-- <img src="flomo-icon.png" alt="Flomo"> -->
+					<span>Postnitro</span>
+				</div>
+				<div class="link" onclick="window.location='https://github.com';">
+					<!-- <img src="flomo-icon.png" alt="Flomo"> -->
+					<span>GitHub</span>
+				</div>
+				<div class="link" onclick="window.location='https://www.csdn.net';">
+					<!-- <img src="flomo-icon.png" alt="Flomo"> -->
+					<span>CSDN</span>
+				</div>
+				<div class="link" onclick="window.location='https://web.okjike.com';">
+					<!-- <img src="flomo-icon.png" alt="Flomo"> -->
+					<span>即刻</span>
+				</div>
+				<div class="link" onclick="window.location='https://mail.qq.com/cgi-bin/frame_html?sid=jQVEplXMnJdLOmUA&r=796b00529c93b9e243e9613d4043b58a&lang=zh';">
+					<!-- <img src="flomo-icon.png" alt="Flomo"> -->
+					<span>QQ邮箱</span>
+				</div>
+
+			</div>
+			<div class="toolbar-section">
+				<h2>工具</h2>
+				<div class="link" onclick="window.location='https://translate.google.com/?hl=zh-CN';">
+					<!-- <img src="figma-icon.png" alt="Figma"> -->
+					<span>Google 翻译</span>
+				</div>
+				<div class="link" onclick="window.location='https://app.apifox.com/main/teams/1915849?tab=project';">
+					<!-- <img src="photopea-icon.png" alt="Photopea"> -->
+					<span>Apifox</span>
+				</div>
+				<div class="link" onclick="window.location='https://aa.bestrie.com/user/project/import/index';">
+					<!-- <img src="photopea-icon.png" alt="Photopea"> -->
+					<span>百事AA记账</span>
+				</div>
+
+			</div>
+			<div class="toolbar-section">
+				<h2>个人项目</h2>
+
+				<a href="http://101.200.228.37:8080" class="link">
+
+					<!-- <img src="figma-icon.png" alt="Figma"> -->
+					<span>年度todolist</span>
+				</a>
+
+				<div class="link" onclick="window.location='https://inkxxxxyy.github.io/fading_echoes/';">
+					<!-- <img src="photopea-icon.png" alt="Photopea"> -->
+					<span>Fading Echoes</span>
+				</div>
+
+			</div>
+			<div id="relax-container">
+
+				<!-- <div class="link"> -->
+				<div class="relax-tag" onclick="window.location='https://t.bilibili.com/?spm_id_from=333.1007.0.0';">
+					<!-- <img src="photopea-icon.png" alt="Photopea"> -->
+					<span>bilibili</span>
+				</div>
+				<!-- </div> -->
+				<div class="relax-tag" onclick="window.location='https://www1.szu.edu.cn';">
+					<!-- <img src="photopea-icon.png" alt="Photopea"> -->
+					<span>深圳大学内部网</span>
+				</div>
+				<div class="relax-tag" onclick="window.location='172.30.255.42/a79.htm?wlanuserip=172.30.183.5&wlanacname=&wlanacip=172.30.255.41';">
+					<!-- <img src="photopea-icon.png" alt="Photopea"> -->
+					<span>上网登录页</span>
+				</div>
+			</div>
+
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

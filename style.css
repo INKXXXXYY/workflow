@@ -1,0 +1,235 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to bottom right, #FFEFBA, #FFFFFF);
+	/* 渐变背景效果 */
+}
+
+.header h1 {
+	color: #333;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.header p {
+	color: #666;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.search-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.search-container input {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 20px 0 0 20px;
+	outline: none;
+}
+
+.search-container button {
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-radius: 0 20px 20px 0;
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.toolbar {
+	display: flex;
+	justify-content: center;
+	/* 这会使所有子元素在父容器中水平居中 */
+	text-align: center;
+}
+
+.toolbar-name {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.link {
+	text-decoration: none;
+	/* 移除下划线 */
+	color: inherit;
+	/* 链接颜色与周围文本相同 */
+	display: flex;
+	flex-direction: column;
+	/* 堆叠子元素 */
+	align-items: center;
+	/* 水平居中 */
+	justify-content: center;
+	/* 垂直居中 */
+	width: 100px;
+	height: 50px;
+	margin: 0 10px 10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(255, 170, 127, 0.2);
+	cursor: pointer;
+}
+
+.link-icon {
+	width: 100%;
+	height: 70%;
+	background-size: cover;
+	background-position: center;
+}
+
+.flomo-icon {
+	background-image: url('flomo-icon-url');
+	/* 替换为Flomo图标的URL */
+}
+
+.link-title {
+	font-size: 14px;
+	color: #333;
+}
+
+/* 添加其他图标的CSS */
+.toolbar-section {
+	padding-right: 50px;
+	/* 增加section间的间隔 */
+}
+
+.section-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	/* 增加标签之间的间隔 */
+	margin-bottom: 10px;
+}
+
+.tag {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 8px 16px;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.tag:hover {
+	transform: scale(1.05);
+}
+
+/* Styles for modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.add-button {
+	display: inline-block;
+	background-color: #ffffff;
+	/* 白色背景 */
+	color: #333;
+	/* 深色文字 */
+	text-align: center;
+	vertical-align: middle;
+	padding: 8px 16px;
+	/* 适量内边距 */
+	margin: 5px;
+	/* 与其他标签保持一致的外边距 */
+	border-radius: 10px;
+	/* 圆角边框 */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	/* 与其他标签一致的阴影 */
+	font-size: 14px;
+	/* 字体大小 */
+	cursor: pointer;
+	/* 鼠标悬停时的手型指针 */
+	border: none;
+	/* 无边框 */
+	transition: all 0.3s ease;
+	/* 平滑过渡效果 */
+}
+
+.add-button:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	/* 鼠标悬停时的阴影效果 */
+	transform: translateY(-2px);
+	/* 轻微上移效果 */
+}
+
+#relax-container {
+	position: fixed;
+	/* 或者 absolute，取决于您的布局需求 */
+	bottom: 20px;
+	/* 调整到您的截图中红框的位置 */
+	left: 50%;
+	/* 水平居中 */
+	transform: translateX(-50%);
+	/* 配合left使用，确保准确居中 */
+	text-align: center;
+	/* 确保文本在容器中居中 */
+}
+
+.relax-tag {
+	display: inline-block;
+	background-color: #f2f2f2;
+	/* 淡灰色背景 */
+	color: #333;
+	/* 文字颜色 */
+	padding: 5px 30px;
+	/* 细长的内边距，您可以根据需要调整 */
+	margin-right: 10px;
+	font-size: 14px;
+	/* 文字大小，也可以根据需要调整 */
+	border-radius: 15px;
+	/* 轻微的圆角 */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	/* 轻微的阴影效果 */
+	cursor: pointer;
+	/* 如果这个标签是可点击的 */
+	transition: all 0.3s ease;
+	/* 平滑过渡效果，如果有hover效果 */
+}
+
+.relax-tag:hover {
+	background-color: #e0e0e0;
+	/* 鼠标悬停时的背景颜色变化 */
+}
