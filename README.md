@@ -12,7 +12,7 @@
 
 ![image](https://github.com/INKXXXXYY/workflow/assets/95300518/1e108d5f-dc8a-4f1c-875a-c69ba257e1a1)
  
-#部署
+# 部署
 1. 项目fork到仓库
 2. setting-page-发布（可以查github部署静态页面）
 3. 使用插件设置为chrome的新标签页（new tag redirect)
