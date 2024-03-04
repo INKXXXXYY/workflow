@@ -1,4 +1,3 @@
-![image](https://github.com/INKXXXXYY/workflow/assets/95300518/e6e0c6bf-38f8-4c15-a38e-0290a4423cd7)# workflow
 # workflow
 
 灵感来源于小轻工作台，但是那个有点难以修改（其实是我不会sory）。
