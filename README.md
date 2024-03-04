@@ -16,4 +16,6 @@
 1. 项目fork到仓库
 2. setting-page-发布（可以查github部署静态页面）
 3. 使用插件设置为chrome的新标签页（new tag redirect)
+
+   
 ![image](https://github.com/INKXXXXYY/workflow/assets/95300518/d0974bc2-c5f7-49ab-bc2d-d6120e08bb29)
